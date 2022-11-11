@@ -16,7 +16,7 @@ app = FastAPI()
 
 templates = Jinja2Templates(directory="templates")
 
-device1 =torch.device('cuda:0')
+device1 =torch.device('cpu')
 host = ""
 #_____________________ classification _________________________
 model1 = torch.load("models/TCIS_113class_epoch_11.pth",map_location='cpu' )
